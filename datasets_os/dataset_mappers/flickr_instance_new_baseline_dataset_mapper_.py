@@ -243,6 +243,7 @@ class COCOInstanceNewBaselineDatasetMapper:
             # NOTE: does not support BitMask due to augmentation
             # Current BitMask cannot handle empty objects
             assert len(annos)>0
+            print(annos[0])
             assert  "segmentation" in annos[0]
             instances = utils.annotations_to_instances(annos, image_shape,mask_format="bitmask")
 

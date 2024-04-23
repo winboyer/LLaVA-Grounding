@@ -18,7 +18,6 @@ import pycocotools.mask as mask_util
 
 _PREDEFINED_SPLITS_COCO_PANOPTIC_CAPTION = {
 
-
     "coco_instruct_train_v3": (
         "coco/train2014", # image_root
         "coco/annotations/instances_train2017_gvc.json", # annot_root
@@ -26,14 +25,17 @@ _PREDEFINED_SPLITS_COCO_PANOPTIC_CAPTION = {
     ),
 
     "coco_interactive": (
-        "coco/train2014", # image_root
-        "coco/annotations/instances_train2014_filter.json", # annot_root
-        "llava/annotations/llava_instruct_150k_visual_prompt.json",
+        "/root/jinyfeng/datas/llava-grounding/coco/train2014", # image_root
+        "/root/jinyfeng/datas/llava-grounding/coco/annotations/instances_train2014_filter.json", # annot_root
+        "/root/jinyfeng/datas/llava-grounding/llava/annotations/llava_instruct_150k_visual_prompt.json",
     ),
     "coco_interactive_refcoco": (
-        "coco/train2017", # image_root
-        "coco/annotations/instances_train2017_refcoco.json", # annot_root
-        "coco/annotations/grounding_train2017_instruct.json",
+        "/root/jinyfeng/datas/llava-grounding/coco/train2017", # image_root
+        # "/root/jinyfeng/datas/llava-grounding/coco/train2014", # image_root
+        # "coco/annotations/instances_train2017_refcoco.json", # annot_root
+        # "coco/annotations/grounding_train2017_instruct.json",
+        "/root/jinyfeng/datas/llava-grounding/coco/annotations/instances_train2017_gvc.json", # annot_root
+        "/root/jinyfeng/datas/llava-grounding/coco/annotations/panoptic_train2017_filter.json",
     ),
 }
 

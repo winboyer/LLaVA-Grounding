@@ -20,8 +20,10 @@ _PREDEFINED_SPLITS = {
         "final_flickr_separateGT_val.json", # # anno_path
     ),
     "flickr_train": (
-        "flickr30k_entities/train", # image_root
-        "final_flickr_separateGT_train.json", # # anno_path
+        # "flickr30k_entities/train", # image_root
+        # "final_flickr_separateGT_train.json", # # anno_path
+        "/root/jinyfeng/datas/llava-grounding/flickr30k_entities/train",
+        "/root/jinyfeng/datas/llava-grounding/flickr30k_entities/annotations/final_flickr_separateGT_train.json"
     ),
 }
 
